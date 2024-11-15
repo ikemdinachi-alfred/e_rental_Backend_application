@@ -15,6 +15,7 @@ public class BookingDTO {
     private Long id;
     private LocalDate checkInDate;
     private LocalDate checkOutDate;
+    private String quantity;
     private String itemType;
     private String bookingConfirmationCode;
     private UserDTO user;
