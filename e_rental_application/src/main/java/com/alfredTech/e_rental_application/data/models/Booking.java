@@ -15,9 +15,9 @@ public class Booking {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @NotNull(message = "Check in date is required")
-    private LocalDate bookingDate;
+    private LocalDate checkInDate;
     @Future(message = "Check out date must be in the future")
-    private LocalDate returnDate;
+    private LocalDate checkOutDate;
 
     @Min(value = 1, message = "Number of item must not be less than 1")
     private Long quantity;
@@ -36,10 +36,10 @@ public class Booking {
     public String toString() {
         return "Booking{" +
                 "id=" + id +
-                ", bookingDate=" + bookingDate +
-                ", returnDate=" + returnDate +
+                ", check in Date=" + checkInDate +
+                ", check out Date=" + checkOutDate +
                 ", quantity=" + quantity +
-                ", bookingConfirmationCode='" + bookingConfirmationCode + '\'' +
+                ", booking Confirmation Code='" + bookingConfirmationCode + '\'' +
                 '}';
     }
 }
