@@ -1,4 +1,4 @@
-package com.alfredTech.e_rental_application.services;
+package com.alfredTech.e_rental_application.services.serviceInterface;
 
 import com.alfredTech.e_rental_application.dtos.reponse.Response;
 import org.springframework.web.multipart.MultipartFile;

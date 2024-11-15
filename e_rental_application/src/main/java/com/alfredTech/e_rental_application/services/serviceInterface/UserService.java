@@ -1,4 +1,4 @@
-package com.alfredTech.e_rental_application.services;
+package com.alfredTech.e_rental_application.services.serviceInterface;
 
 import com.alfredTech.e_rental_application.data.models.User;
 import com.alfredTech.e_rental_application.dtos.reponse.Response;
