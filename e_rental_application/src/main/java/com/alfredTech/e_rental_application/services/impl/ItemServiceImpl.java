@@ -144,7 +144,7 @@ public class ItemServiceImpl implements ItemService {
     }
 
     @Override
-    public Response allAvailableItems() {
+    public Response getAllAvailableItems() {
         Response response = new Response();
 
         try {

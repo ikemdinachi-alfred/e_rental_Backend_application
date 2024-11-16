@@ -16,8 +16,9 @@ public interface ItemService {
                         MultipartFile photo);
     Response getItemById(Long itemId);
     Response getAvailableItemsByDataAndType(LocalDate checkInDate, LocalDate checkOutDate,String itemType );
-    Response allAvailableItems();
+    Response getAllAvailableItems();
     Response getAllItems();
     Response deleteItem(Long roomId);
+
 
 }
