@@ -26,13 +26,13 @@ public class ItemServiceImpl implements ItemService {
     private GoogleCloudStorage googleCloudStorage;
 
     @Override
-    public Response addNewItem(MultipartFile photo, String itemName, String itemType, BigDecimal itemPrice, String description) {
+    public Response addNewItem(MultipartFile photo, String name, String itemType, BigDecimal itemPrice, String description) {
         Response response = new Response();
         try {
             String imageUrl = googleCloudStorage.uploadImage(photo);
             Item item = new Item();
             item.setItemPhotoUrl(imageUrl);
-            item.setName(itemName);
+            item.setName(name);
             item.setItemType(itemType);
             item.setItemPrice(itemPrice);
             item.setItemDescription(description);

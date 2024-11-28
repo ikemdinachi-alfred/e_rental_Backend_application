@@ -21,7 +21,7 @@ public class GoogleCloudStorage {
 
         try {
             byte[] bytes = photo.getBytes();
-            String BUCKET_NAME = "hospitality-bucket1";
+            String BUCKET_NAME = "${BUCKETNAME}";
             BlobId blobId = BlobId.of(BUCKET_NAME, fileName);
             BlobInfo blobInfo = BlobInfo.newBuilder(blobId)
                     .setContentType(photo.getContentType())
